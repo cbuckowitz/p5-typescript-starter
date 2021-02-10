@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "mapRoot": "./sketch/",
-    "module": "none",
-    "noImplicitAny": true,
-    "outFile": "./build/build.js",
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "rootDir": "./sketch/",
+    "target": "ES2015",
+    "module": "ES2015",
+    "outDir": "out",
     "sourceMap": true,
-    "sourceRoot": "./sketch/",
-    "target": "es5"
-  }
+    "moduleResolution": "Node",
+  },
+  "files": [
+    "node_modules/@types/p5/global.d.ts"
+  ],
+  "include": [
+    "src/**/*"
+  ],
 }

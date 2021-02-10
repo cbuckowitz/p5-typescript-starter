@@ -1,18 +1,25 @@
 {
   "name": "p5-typescript-starter",
-  "version": "1.0.0",
-  "description": "Project to quickly get something working in [p5.js](https://p5js.org/) and [typescript](https://www.typescriptlang.org/)",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "run-p start-compile start-run",
-    "start-compile": "tsc --watch",
-    "start-run": "browser-sync start --server -w"
+  "version": "0.1.0",
+  "description": "p5.js typescript starter template",
+  "main": "index.html",
+  "repository": "https://github.com/cbuckowitz/p5-typescript-starter.git",
+  "author": "Christian Buckowitz <cbuckowitz@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "typescript": "^4.1.5",
+    "@types/p5": "^0.9.1",
+    "p5": "^1.2.0"
   },
-  "homepage": "https://github.com/Gaweph/p5-typescript-starter#readme",
-  "devDependencies": {
-    "@types/p5": "^0.9.0",
-    "browser-sync": "^2.26.12",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^3.8.3"
+  "scripts": {
+    "clean": "rm -rf ./out",
+    "build": "tsc",
+    "prestart": "npm run clean && npm run build",
+    "start": "npm run build --watch & live-server --mount=/lib:./node_modules/p5/lib --mount=/script:./out"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
