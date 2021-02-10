@@ -13,5 +13,6 @@ This is opinionated to just work with typescript and intellisense in [Visual Stu
 Clone and npm install and run start or [clone repository into container volume](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume) to work in a remote container.
 
 ### Glitch
-Just clone the repo into a new project. Check the logs, it takes a while to prepare.
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/cbuckowitz/p5-typescript-starter)
+
+Just clone the repo into a new project. Check the logs, it takes a while to prepare.
